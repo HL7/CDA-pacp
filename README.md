@@ -16,7 +16,7 @@ The `backups` directory contains the original word documents and ppt illustratio
 
 The `examples` directory contains current version of the provided example files conformant to this IG in xml or html format. 
 
-The `input` directory contains the pdf files that are considered the current version of the specification.
+The `input` directory contains the pdf files and the _readme.txt file that are considered the current version of the specification.
 
 The `validation` directory contains current version of the validation artifacts. The schematron (.sch) file AND voc.xml file are needed to successfully validate an xml instance asserting conformance to this IG. Implementers should always validate CDA XML 
 files against the core CDA R2 XML schema before validating against the schematron for a specific IG.
