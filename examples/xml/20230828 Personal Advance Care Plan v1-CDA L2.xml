@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:voc="urn:hl7-org:v3/voc" xmlns:sdtc="urn:hl7-org:sdtc">
+    <realmCode code="US" />
+    <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+    <templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.29.1"/>
+    <templateId extension="2023-08-28" root="2.16.840.1.113883.4.823.1.2.1"/>
+    <templateId extension="2023-08-28" root="2.16.840.1.113883.4.823.1.1.1"/>
+    <id extension="20130607100315-CCDA-CCD-999" root="2.16.840.1.113883.3.3208.101.889.12"/>
+    <code code="81334-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+        displayName="Personal advance care plan"/>
+    <title mediaType="text/plain" representation="TXT">Personal Advance Care Plan Document (Version
+        1)</title>
+    <effectiveTime value="20200501142534-0600"/>
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" displayName="normal"/>
+    <languageCode code="en-US"/>
+    <setId extension="20130607100315-CCDA-999" root="2.16.840.1.113883.3.3208.101.737"/>
+    <versionNumber value="1"/>
+    <recordTarget>
+        <patientRole>
+            <id extension="87f37989294a408897aacd1fc5d8fd16" root="2.16.840.1.113883.4.823.1"/>
+            <addr use="HP">
+                <streetAddressLine partType="SAL">111 Maple Court</streetAddressLine>
+                <city partType="CTY">San Antonio</city>
+                <state partType="STA">TX</state>
+                <postalCode partType="ZIP">78212</postalCode>
+                <country partType="CNT">US</country>
+            </addr>
+            <telecom value="tel:+12146743955" use="MC"/>
+            <telecom use="HP" value="mailto:BetsySJ@example.com"/>
+            <patient classCode="PSN" determinerCode="INSTANCE">
+                <name use="L">
+                    <given partType="GIV">Betsy</given>
+                    <family partType="FAM">Smith-Johnson</family>
+                </name>
+                <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1"
+                    codeSystemName="AdministrativeGender" displayName="Female"/>
+                <birthTime value="19501115"/>
+                <maritalStatusCode nullFlavor="NI"/>
+                <religiousAffiliationCode>
+                    <originalText language="en-US" mediaType="text/plain">Catholic</originalText>
+                </religiousAffiliationCode>
+                <raceCode nullFlavor="NI"/>
+                <ethnicGroupCode nullFlavor="NI"/>
+                <languageCommunication>
+                    <languageCode code="eng"/>
+                    <modeCode nullFlavor="NI"/>
+                    <proficiencyLevelCode nullFlavor="NI"/>
+                    <preferenceInd value="true"/>
+                </languageCommunication>
+            </patient>
+        </patientRole>
+    </recordTarget>
+    <author>
+        <functionCode code="116154003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"
+            displayName="Patient (person)"/>
+        <time value="20200501142534-0600"/>
+        <assignedAuthor>
+            <id extension="66666" root="2.16.840.1.113883.4.6"/>
+            <id extension="87f37989294a408897aacd1fc5d8fd16" root="2.16.840.1.113883.4.823.1"/>
+            <code code="ONESELF" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"
+                displayName="Self"/>
+            <addr use="HP">
+                <streetAddressLine partType="SAL">111 Maple Court</streetAddressLine>
+                <city partType="CTY">San Antonio</city>
+                <state partType="STA">TX</state>
+                <postalCode partType="ZIP">78212</postalCode>
+                <country partType="CNT">US</country>
+            </addr>
+            <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                <name use="L">
+                    <given partType="GIV">Betsy</given>
+                    <family partType="FAM">Smith-Johnson</family>
+                </name>
+            </assignedPerson>
+        </assignedAuthor>
+    </author>
+    <dataEnterer>
+        <assignedEntity>
+            <id extension="66666" root="2.16.840.1.113883.4.6"/>
+            <code code="ONESELF" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"
+                displayName="Self">
+                <originalText language="en-US" mediaType="text/plain"/>
+            </code>
+            <addr use="HP">
+                <streetAddressLine partType="SAL">111 Maple Court</streetAddressLine>
+                <city partType="CTY">San Antonio</city>
+                <state partType="STA">TX</state>
+                <postalCode partType="ZIP">78212</postalCode>
+                <country partType="CNT">US</country>
+            </addr>
+            <telecom use="HP" value="mailto:BetsySJ@example.com"/>
+            <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                <name use="L">
+                    <given partType="GIV">Betsy</given>
+                    <family partType="FAM">Smith-Johnson</family>
+                </name>
+            </assignedPerson>
+        </assignedEntity>
+    </dataEnterer>
+    <custodian>
+        <assignedCustodian>
+            <representedCustodianOrganization>
+                <id extension="44444" root="6b7db8a2-1c53-42aa-b4c4-c49c05406f97"/>
+                <name>ADVault Inc</name>
+                <telecom use="WP" value="tel:+1(202)776-7700"/>
+                <addr use="WP">
+                    <streetAddressLine partType="SAL">740 E. Campbell Rd. Suite
+                        825</streetAddressLine>
+                    <city partType="CTY">Richardson</city>
+                    <state partType="STA">TX</state>
+                    <postalCode partType="ZIP">75081</postalCode>
+                    <country partType="CNT">US</country>
+                </addr>
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    <authenticator>
+        <!--Organization Notarizing the Authentic Copy-->
+        <time value="202005011429-0700"/>
+        <signatureCode code="S"/>
+        <sdtc:signatureText/>
+        <!-- Digital Signature goes here. -->
+        <assignedEntity>
+            <id root="2.16.840.1.113883.4.823.1.5.1" extension="20130607102400"/>
+            <code code="NOT" codeSystem="2.16.840.1.113883.5.110" codeSystemName="RoleClass"
+                displayName="Notary Public">
+                <originalText mediaType="text/plain" language="en-US">Document
+                    Authenticator</originalText>
+            </code>
+            <addr use="WP">
+                <streetAddressLine partType="SAL">740 E. Campbell Rd. Suite 825</streetAddressLine>
+                <city partType="CTY">Richardson</city>
+                <state partType="STA">TX</state>
+                <postalCode partType="ZIP">75081</postalCode>
+                <country partType="CNT">US</country>
+            </addr>
+            <telecom value="tel:+1(202)776-7700" use="WP"/>
+            <representedOrganization>
+                <name>ADVault Inc</name>
+            </representedOrganization>
+        </assignedEntity>
+    </authenticator>
+    <authenticator>
+        <!-- Notary Public -->
+        <time value="202005011429-0700"/>
+        <signatureCode code="S"/>
+        <assignedEntity>
+            <id root="2.16.840.1.113883.4.823.1.5.1" extension="20130607102401"/>
+            <code code="NOT" codeSystem="2.16.840.1.113883.5.110" codeSystemName="RoleClass"
+                displayName="Notary Public">
+                <originalText mediaType="text/plain" language="en-US">Notary</originalText>
+            </code>
+            <addr use="HP">
+                <streetAddressLine partType="SAL">5555 Busy Ave.</streetAddressLine>
+                <city partType="CTY">San Antonio</city>
+                <state partType="STA">TX</state>
+                <postalCode partType="ZIP">78212</postalCode>
+                <county partType="CPA">Bexar County</county>
+                <country partType="CNT">US</country>
+            </addr>
+            <telecom value="tel:+1(210)555-1234" use="WP"/>
+            <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                <name use="L">
+                    <given partType="GIV">Natalie</given>
+                    <family partType="FAM">Notarizer</family>
+                </name>
+            </assignedPerson>
+        </assignedEntity>
+    </authenticator>
+    <authenticator>
+        <!-- Witness -->
+        <time value="202005011429-0700"/>
+        <signatureCode code="S"/>
+        <assignedEntity>
+            <id root="2.16.840.1.113883.4.823.1.5.1" extension="20130607102402"/>
+            <code code="CONSWIT" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"
+                displayName="Consent Witness">
+                <originalText mediaType="text/plain" language="en-US">Witness</originalText>
+            </code>
+            <addr use="HP">
+                <streetAddressLine partType="SAL">75 Main Street</streetAddressLine>
+                <city partType="CTY">San Antonio</city>
+                <state partType="STA">OR</state>
+                <postalCode partType="ZIP">97229</postalCode>
+                <country partType="CNT">US</country>
+            </addr>
+            <telecom value="tel:+1(301)555-1234" use="WP"/>
+            <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                <name use="L">
+                    <given partType="GIV">Will</given>
+                    <family partType="FAM">Smith</family>
+                </name>
+            </assignedPerson>
+        </assignedEntity>
+    </authenticator>
+    <authenticator>
+        <!-- Author -->
+        <time value="202005011429-0700"/>
+        <signatureCode code="S"/>
+        <assignedEntity>
+            <id root="2.16.840.1.113883.4.823.1.5.1" extension="20130607102403"/>
+            <code code="ONESELF" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"
+                displayName="Self"/>
+            <addr use="HP">
+                <streetAddressLine partType="SAL">111 Maple Court</streetAddressLine>
+                <city partType="CTY">San Antonio</city>
+                <state partType="STA">OR</state>
+                <postalCode partType="ZIP">97229</postalCode>
+                <country partType="CNT">US</country>
+            </addr>
+            <telecom value="tel:+12146745539" use="MC"/>
+            <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                <name use="L">
+                    <given partType="GIV">Betsy</given>
+                    <family partType="FAM">Smith-Johnson</family>
+                </name>
+            </assignedPerson>
+        </assignedEntity>
+    </authenticator>
+    <participant typeCode="DEV">
+        <functionCode code="assembler" codeSystem="2.16.840.1.113883.4.642.4.1131"
+            codeSystemName="ProvenanceParticipationFunction"/>
+        <time value="20200501142534-0600"/>
+        <associatedEntity classCode="OWN">
+            <scopingOrganization>
+                <id extension="44444" root="6b7db8a2-1c53-42aa-b4c4-c49c05406f97"/>
+                <name use="L">ADVault, Inc.</name>
+                <telecom use="WP" value="tel:+1(202)776-7700"/>
+                <addr use="WP">
+                    <streetAddressLine partType="SAL">740 E. Campbell Rd. Suite
+                        825</streetAddressLine>
+                    <city partType="CTY">Richardson</city>
+                    <state partType="STA">TX</state>
+                    <postalCode partType="ZIP">75081</postalCode>
+                    <country partType="CNT">US</country>
+                </addr>
+            </scopingOrganization>
+        </associatedEntity>
+    </participant>
+    <component>
+        <structuredBody>
+            <component> <!-- code="81335-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Healthcare agent" -->
+                <section>
+                    <templateId extension="2022-03-25" root="2.16.840.1.113883.4.823.1.3.3"/>
+                    <code code="81335-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                        displayName="Healthcare agent"/>
+                    <title language="en-US" mediaType="text/plain" representation="TXT">Appointment of a Primary Healthcare Agent and Alternate Healthcare Agents</title>
+                    <text>
+                        <paragraph>IF THIS PART OF THE uADD™ IS LEFT BLANK, I DO NOT WANT TO
+                            DESIGNATE A <br/>HEALTHCARE AGENT AT THIS TIME, AND I DO NOT WANT A
+                            <br/>DEFAULT HEALTHCARE AGENT DESIGNATED FOR ME UNDER APPLICABLE LAW.
+                            <br/>I TRUST THE DOCTORS AND NURSES TREATING ME TO MAKE <br/>MEDICAL
+                            TREATMENT DECISIONS REGARDING MY TREATMENT AND CARE. </paragraph>
+                        <paragraph>I am appointing the person or persons below as my healthcare
+                            agent and, if applicable, as my alternate healthcare agent(s), and I am
+                            granting to each of them the legal authority to make medical treatment
+                            decisions on my behalf and to consult with my physician and others. The
+                            power to make medical treatment decisions that I am granting to my
+                            healthcare agent(s) is expressly subject to, and limited by, the choices
+                            that I have expressed elsewhere in my uADD. If my medical treatment
+                            choices are not clear, I am authorizing and directing my healthcare
+                            agent to make decisions in my best interests and based on what is known
+                            of my wishes.</paragraph>
+                        <content ID="HealthAgent1">
+                            <content styleCode="Bold">Primary Healthcare Agent</content>
+                            <br/>
+                            <content ID="HealthAgent1Type">The person I choose as my Primary
+                                Healthcare Agent is:</content>
+                            <br/>
+                            <content styleCode="Answer">
+                                <content ID="HealthAgent1Person"> Debra Johnson <content
+                                    ID="HealthAgent1Rel">(Daughter)</content>
+                                </content>
+                                <br/>
+                                <content ID="HealthAgent1cell"> 1-214-674-1111 </content>
+                                <br/>
+                                <content ID="HealthAgent1Email"> DebraSJ@example.com </content>
+                                <br/>
+                                <content ID="HealthAgent1SelectedDate"> [SELECTED to act as a
+                                    healthcare agent on 5/1/2020, at 2:25 PM CDT] </content>
+                                <br/>
+                                <content ID="HealthAgent1AcceptanceDate" styleCode="RedAnswer"> [As
+                                    of 5/1/2020, at 2:25 PM CDT, a response is still PENDING] </content>
+                                <br/>
+                            </content>
+                        </content>
+                        <br/>
+                        <content ID="HealthAgent2">
+                            <content ID="HealthAgent2Type" styleCode="Bold">First Alternate
+                                Healthcare Agent</content>
+                            <br/>
+                            <content ID="HealthAgent2Powers">If this healthcare agent is unable or
+                                unwilling to make medical treatment decisions for me, or if my
+                                spouse is designated as my primary healthcare agent and our marriage
+                                is annulled, or we are divorced or legally separated, then my next
+                                choice for a healthcare agent is:</content>
+                            <br/>
+                            <content styleCode="Answer">
+                                <content ID="HealthAgent2Person"> Chales Johnson <content
+                                    ID="HealthAgent2Rel">(Son)</content>
+                                </content>
+                                <br/>
+                                <content ID="HealthAgent2cell"> 1-313-222-3333 </content>
+                                <br/>
+                                <content ID="HealthAgent2Email"> CharlesSJ@example.com </content>
+                                <br/>
+                                <content ID="HealthAgent2SelectedDate"> [SELECTED to act as a
+                                    healthcare agent on 5/1/2020, at 2:25 PM CDT] </content>
+                                <br/>
+                                <content ID="HealthAgent2AcceptanceDate" styleCode="RedAnswer"> [As
+                                    of 5/1/2020, at 2:25 PM CDT, a response is still PENDING] </content>
+                                <br/>
+                            </content>
+                        </content>
+                        <br/>
+                        <content ID="HCA_1">
+                            <content ID="HCA_1_Q" styleCode="Bold"> My Healthcare Agent’s General
+                                Authority </content>
+                            <br/>
+                            <content ID="HCA_1_PL">
+                                <content>Subject to my medical treatment choices expressed elsewhere
+                                    in this uADD™ and applicable law that requires otherwise, I
+                                    grant to my healthcare agent the power to make all choices and
+                                    medical treatment decisions for me.</content>
+                            </content>
+                        </content>
+                        <br/>
+                        <content ID="HCA_2">
+                            <content ID="HCA_2_C"> If I cannot express my own wishes for medical
+                                treatment, </content>
+                            <content ID="HCA_2_PL"> I would like the doctors treating me, as well as
+                                my healthcare agent if I have chosen one, to make decisions based as
+                                much as possible and appropriate on my instructions below.
+                            </content>
+                        </content>
+                        <content ID="HCA_3" styleCode="Answer">
+                            <content ID="HCA_3_C"> If at some point in the future I am declared
+                                incompetent, </content>
+                            <content ID="HCA_3_PL"> I DO NOT want to be allowed to override these
+                                preferences. I want my doctors to follow the preferences I express
+                                in this document. </content>
+                        </content>
+                        <br/>
+                        <br/>
+                        <content ID="HCA_4">
+                            <content ID="HCA_4_PL"> Unless I have stated otherwise somewhere else in
+                                this uADD™, I understand that my healthcare agent may reconsider my
+                                medical treatment choices expressed above in light of my other
+                                instructions contained elsewhere in this uADD™ or new medical
+                                information. </content>
+                        </content>
+                        <br/>
+                    </text>
+                </section>
+            </component>
+            <component>
+                <!-- code code="81336-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GPP certain health cond -->
+                <section>
+                    <templateId extension="2023-08-28" root="2.16.840.1.113883.4.823.1.3.4"/>
+                    <code code="81336-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                        displayName="GPP certain health cond"/>
+                    <title language="en-US" mediaType="text/plain" representation="TXT">Expression of Healthcare Treatment Preferences</title>
+                    <text>
+                        <content styleCode="Bold">My Treatment Preferences in Specific Circumstances</content>
+                        <br/>
+                        <br/>
+                        <content ID="GPP_HS_1"></content>
+                        <content ID="GPP_HS_1_Precond">
+                            If I am so sick or seriously injured that I cannot express my own medical treatment
+                            preferences, and if I am not expected to live without additional
+                            treatment for my illness, disease, condition or injury, then I
+                            want my medical care team to know that these are the things that
+                            are most important to me: 
+                        </content>
+                        These would be my health care goals:
+                        <list ID="GPP_eol_1_A" listType="ordered" styleCode="Answer">
+                            <item ID="GPP_eol_priorities_1-1"> Avoiding prolonged dependence on
+                                machines </item>
+                            <item ID="GPP_eol_priorities_1-2"> Not being a physical burden to my
+                                family </item>
+                            <item ID="GPP_eol_priorities_1-3"> Dying at home </item>
+                        </list>
+                        <br/>
+                        <content ID="GPP_HS_2">
+                            <content ID="GPP_HS_2_Precond"> If I am having significant pain or suffering, </content>
+                            <content ID="GPP_HS_2_TreatIntPref" styleCode="Answer"> I would like my doctors to 
+                                <content ID="GPP_HS_2_TreatInt">consult a Supportive and Palliative Care Team to help treat my
+                                physical, emotional and spiritual discomfort, and to support my
+                                family.</content> 
+                            </content>
+                        </content>
+                        <br/>
+                        <br/>
+                        <content ID="GPP_HS_3">
+                            <content ID="GPP_HS_3_Precond">If my health ever deteriorates due to a
+                                terminal illness, and my doctors believe I will not be able to
+                                interact meaningfully with my family, friends, or
+                                surroundings,
+                            </content>
+                            <content ID="GPP_HS_3_TreatIntPref" styleCode="Answer"> I would like for them to keep trying 
+                                <content ID="GPP_HS_3_TreatInt">life-sustaining treatments</content> until my healthcare agent
+                                decides it is time to stop and such treatments and let me die
+                                gently.
+                            </content>
+                        </content>
+                        <br/>
+                        <br/>
+                        <content ID="GPP_HS_4">
+                            <content ID="GPP_HS_4_Precond"> If I have a severe, irreversible brain injury
+                                or illness and can’t dress, feed, or bathe myself, or communicate my
+                                medical wishes, but doctors can keep me alive in this condition for
+                                a long period of time, 
+                            </content>
+                            <content ID="GPP_HS_4_TreatIntPref" styleCode="Answer"> I would like for them to
+                                keep trying <content ID="GPP_HS_4_TreatInt">life-sustaining treatments</content> until my healthcare agent
+                                decides it is time to stop and such treatments and let me die
+                                gently.
+                            </content>
+                        </content>
+                        <br/>  
+                        <br/>
+                        <content ID="GPP_HS_5">
+                            <content ID="GPP_HS_5_Precond">Although I understand that, depending on the
+                                situation and circumstances, medical personnel may not be able to
+                                follow my wishes,
+                            </content>
+                            <content ID="GPP_HS_5_TreatIntPref"> here are my general thoughts on <content ID="GPP_HS_5_TreatInt">cardiopulmonary resuscitation (CPR)</content>:  I would want CPR.
+                            </content>
+                        </content>
+                        <br/><br/>
+                        <content ID="GPP_HS_6">
+                            <content ID="GPP_HS_6_Precond">I understand that, in certain jurisdictions,
+                                if I have been diagnosed as pregnant and that diagnosis is known to
+                                my attending physician, 
+                            </content>
+                            <content ID="GPP_HS_6_TreatIntPref">medical treatment providers MAY REFUSE to
+                                follow my directives and provide <content ID="GPP_HS_6_TreatInt">life-sustaining treatment including
+                                    artificially administered nutrition and hydration, as well as CPR
+                                    and other resuscitation measures.</content>
+                            </content>
+                        </content>
+                    </text>
+                </section>
+            </component>
+            <component>
+                <!-- code code="81337-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GPP upon Death" -->
+                <section>
+                    <templateId extension="2023-08-28" root="2.16.840.1.113883.4.823.1.3.5"/>
+                    <code code="81337-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                        displayName="GPP upon Death"/>
+                    <title language="en-US" mediaType="text/plain" representation="TXT">Goals, Preferences and Priorities upon Death</title>
+                    <text>
+                        <content ID="GPP_ud_1">
+                            <content ID="GPP_ud_1_Q" styleCode="Bold">Consent to Donate</content>
+                            <br/>
+                            <content ID="GPP_ud_1_A" styleCode="Answer"> I consent to donate all
+                                organs and tissues. </content>
+                        </content>
+                        <br/>
+                        <br/>
+                        <content ID="GPP_ud_3">
+                            <content ID="GPP_ud_3_Q" styleCode="Bold">Autopsy</content>
+                            <br/>
+                            <content ID="GPP_ud_3_I" styleCode="Answer">I want an autopsy</content>
+                            <content ID="GPP_ud_3_C" styleCode="Answer">only if there are questions
+                                about my death.</content>
+                        </content>
+                        <br/>
+                        <br/>
+                        <content ID="GPP_ud_5">
+                            <content ID="GPP_ud_5_Q" styleCode="Bold">Here are my thoughts on
+                                funeral or burial plans:</content>
+                            <br/>
+                            <content ID="GPP_ud_5_A" styleCode="Answer"> If I were to pass away:
+                                <br/> Please call Jim Houston, my lawyer, for arrangements I have
+                                already made. </content>
+                        </content>
+                        <br/>
+                        <br/>
+                    </text>
+                </section>
+            </component>
+            <component>
+                <!-- code code="81338-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GPP for care experience -->
+                <section>
+                    <templateId extension="2023-08-28" root="2.16.840.1.113883.4.823.1.3.6"/>
+                    <code code="81338-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                        displayName="GPP for care experience"/>
+                    <title language="en-US" mediaType="text/plain" representation="TXT">Care Experience Preferences</title>
+                    <text>
+                        <content styleCode="Italic"> MyDirectives® offers people a list of optional
+                            questions that can be answered by typing text in a text box or by
+                            uploading a video or audio file for each question. Only those questions
+                            answered by Betsy Smith-Johnson appear here. For a complete list of
+                            questions in My Thoughts, please visit www.MyDirectives.com. </content>
+                        <br/>
+                        <br/>
+                        <content styleCode="Bold"> In case I’m being cared for by a person(s) who
+                            doesn't know me very well, I’d like my following thoughts to be known. </content>
+                        <br/>
+                        <br/>
+                        <content ID="ME_1">
+                            <content ID="ME_1_Q" styleCode="Bold"> My likes / joys: </content>
+                            <content> Here are some examples of the things that I would like to have
+                                near me, music that I’d like to hear, and other details of my care
+                                that would help to keep me happy and relaxed: </content>
+                            <br/>
+                            <content ID="ME_1_A" styleCode="Answer"> I love the smell of lavender
+                                and the feeling of sunshine on my face. </content>
+                        </content>
+                        <br/>
+                        <br/>
+                        <content ID="ME_2">
+                            <content ID="ME_2_Q" styleCode="Bold"> My dislikes / fears: </content>
+                            <content> Here is a list of things that I would like to avoid if at all
+                                possible, people that I don’t wish to see, and concerns I have about
+                                particular family members, pets, and so on: </content>
+                            <br/>
+                            <content ID="ME_2_A" styleCode="Answer"> I do not like my feet to be
+                                cold. </content>
+                        </content>
+                        <br/>
+                        <br/>
+                        <content ID="ME_3">
+                            <content ID="ME_3_Q" styleCode="Bold"> How to care for me: </content>
+                            <content> If I become incapacitated and cannot express myself, here is
+                                what I would like to tell my healthcare agent, family and friends
+                                about how I would like for them to care for me: </content>
+                            <br/>
+                            <content ID="ME_3_A" styleCode="Answer"> I want photos of my family
+                                where I can see them. </content>
+                        </content>
+                        <br/>
+                        <br/>
+                        <content ID="ME_4">
+                            <content ID="ME_4_Q" styleCode="Bold"> My religion: </content>
+                            <content> If I appear to be approaching the end of my life, here are
+                                some things that I would like for my caregivers to know about my
+                                faith and my religion. </content>
+                            <br/>
+                            <content ID="ME_4_A" styleCode="Answer"> Please call Father Mark if my
+                                condition warrants the services of a priest. </content>
+                        </content>
+                        <br/>
+                        <br/>
+                        <content ID="ME_5">
+                            <content ID="ME_5_Q" styleCode="Bold"> Please attempt to notify someone
+                                from my religion at the following phone number: </content>
+                            <content> If I have included one </content>
+                            <br/>
+                            <content ID="ME_5_A" styleCode="Answer"> Catholic </content>
+                        </content>
+                        <br/>
+                        <br/>
+                        <content styleCode="Bold">Other Care Experience Preferences</content>
+                        <br/>
+                        <br/>
+                        <content ID="GPP_eol_10">
+                            <content ID="GPP_eol_10_Q">If it were possible to choose, here is where
+                                I would like to spend my final days:</content>
+                            <content ID="GPP_eol_10_A" styleCode="Answer"> At home. I would like to
+                                receive hospice care at home if possible. </content>
+                        </content>
+                        <br/> Care Experience Preference <br/>
+                        <content ID="GPP_eol_2">
+                            <content ID="GPP_eol_2_Q"> Here are some thoughts that I would like for
+                                my medical care team and my healthcare agent(s) to know about the
+                                role that religion, faith or spirituality play in my life: </content>
+                            <br/>
+                            <content ID="GPP_eol_2_A" styleCode="Answer"> I am Catholic, please call
+                                Father Mark at Saint Catherine's on Main Street. </content>
+                        </content>
+                        <br/>
+                        <br/>
+                        <content ID="ME_6">
+                            <content ID="ME_6_Q" styleCode="Bold"> My unfinished business: </content>
+                            <content ID="ME_6_C"> If it appears that I am approaching the end of my
+                                life, and I cannot communicate with persons around me, I would want
+                                my doctors and nurses, my family, and my friends to know about some
+                                unfinished business that I need to address: </content>
+                            <br/>
+                            <content ID="ME_6_I" styleCode="Answer"> I want my sister and I to talk
+                                again, and miss her. I wish we hadn't disagreed all those years ago
+                                and regret the time it has cost us. I'd like to see her face if I
+                                were very ill and needed the comfort of family at my side.
+                            </content>
+                        </content>
+                        <br/>
+                        <br/>
+                        <content ID="ME_7">
+                            <content ID="ME_7_Q" styleCode="Bold"> Laughter: </content>
+                            <content> These are some of my fondest memories from life that have
+                                always brought a smile to my face or made me laugh: </content>
+                            <br/>
+                            <content ID="ME_7_A" styleCode="Answer"> My dogs make me laugh when they
+                                play together, and my grandchildren make me laugh when they put on
+                                plays for me. They bring me great joy.
+                            </content>
+                        </content>
+                        <br/>
+                        <br/>
+                    </text>
+                    
+                </section>
+            </component>
+            <component> <!-- code="81381-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Administrative information associated with this personal advance care plan" -->
+                <section>
+                    <templateId extension="2023-08-28" root="2.16.840.1.113883.4.823.1.3.7"/>
+                    <code code="81381-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                        displayName="Administrative information associated with this personal advance care plan"/>
+                    <title language="en-US" mediaType="text/plain" representation="TXT">Administrative Information</title>
+                    <text>
+                        <content styleCode="Bold">Signature of Author</content>
+                        <br/>
+                        <br/>
+                        <table ID="Author-eSig">
+                            <tbody>
+                                <tr>
+                                    <td>Signature:</td>
+                                    <td>Betsy Smith-Johnson</td>
+                                </tr>
+                                <tr>
+                                    <td>Date:</td>
+                                    <td>05/01/2020, at 2:29pm PDT</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                       
+                        <table ID="Author-Info">
+                            <tbody>
+                                <tr>
+                                    <td>Author Name:</td>
+                                    <td>Betsy Smith-Johnson</td>
+                                </tr>
+                                <tr>
+                                    <td>Author Address:</td>
+                                    <td>111 Maple Court, San Antonio, OR, US 97229</td>
+                                </tr>
+                                <tr>
+                                    <td>Author Telecom:</td>
+                                    <td>12146745539</td>
+                                </tr>
+                                <tr>
+                                    <td>Author Email:</td>
+                                    <td>BetsySJ@example.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br/>
+                    </text>
+                </section>
+            </component>
+            <component>
+                <!-- code code="81339-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Witness and notary Document" -->
+                <section>
+                    <templateId root="2.16.840.1.113883.4.823.1.3.9" extension="2023-08-28"/>
+                    <code code="81339-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                        displayName="Witness and notary Document"/>
+                    <title mediaType="text/plain" representation="TXT" language="en-US">Witnesses and Notary</title>
+                    <text>
+                        <br/>
+                        <content styleCode="Bold"> Statement and Signature of Witness </content>
+                        <br/>
+                        <br/>
+                        <table>
+                            <tbody>
+                                <tr ID="SOW_A">
+                                    <td>
+                                        <content ID="SOW_A_1">I declare that the person who signed
+                                            this personal advance directives document, or who asked
+                                            another to sign this personal advance directives
+                                            document on his/her behalf, is the individual identified
+                                            in the document, and he/she did so in my presence or
+                                            otherwise provided satisfactory proof to me of his/her
+                                            identity. I believe him/her to be of sound mind and at
+                                            least 18 years of age. I personally witnessed him/her
+                                            sign this document or ask the person indicated to do so,
+                                            or I received proof of his/her identity that I believe
+                                            is adequate, and I believe that he/she did so
+                                            voluntarily. By signing this document as a witness, I
+                                            certify that I am:</content>
+                                        <list>
+                                            <item>At least 18 years of age.</item>
+                                            <item>Not related to the person signing this document by
+                                                blood, marriage or adoption.</item>
+                                            <item>Not a healthcare agent appointed by the person
+                                                signing this document.</item>
+                                            <item>Not directly financially responsible for that
+                                                person’s healthcare.</item>
+                                            <item>Not a healthcare provider directly serving the
+                                                person at this time.</item>
+                                            <item>Not an employee (other than a social worker or
+                                                chaplain), officer, director, or partner of a
+                                                healthcare provider (or any parent organization of
+                                                such healthcare provider) directly serving the
+                                                person at this time.</item>
+                                            <item>Not aware that I am entitled to or have a claim
+                                                against the person’s estate.</item>
+                                        </list>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table ID="WIT-eSig">
+                            <tbody>
+                                <tr>
+                                    <td>Signature:</td>
+                                    <td>Will Smith</td>
+                                </tr>
+                                <tr>
+                                    <td>Date:</td>
+                                    <td>05/01/2020, at 2:35pm PDT </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table ID="WIT-Info">
+                            <tbody>
+                                <tr>
+                                    <td>Witness Name:</td>
+                                    <td>Will Smith</td>
+                                </tr>
+                                <tr>
+                                    <td>Witness Email:</td>
+                                    <td>Willsmith@jettelabs.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br/>
+                        <br/>
+                        <content styleCode="Bold">Notary Statement</content>
+                        <br/>
+                        <br/>
+                        <content ID="DocAuthenStatement">Signed (or subscribed or attested) before
+                            me on (date) <content>May 1st, 2020</content> by (name of person)
+                            <content>Natalie Notarizer.</content></content>
+                        <table ID="NOT-stamp">
+                            <tbody>
+                                <tr>
+                                    <td>Notary Name:</td>
+                                    <td>Natalie Notarizer</td>
+                                </tr>
+                                <tr>
+                                    <td>Date:</td>
+                                    <td>05/01/2020, at 2:29pm PDT </td>
+                                </tr>
+                                <tr>
+                                    <td>Notary ID#:</td>
+                                    <td>123456</td>
+                                </tr>
+                                <tr ID="CommissionJurisdiction">
+                                    <td>Commission Jurisdiction:</td>
+                                    <td>TX</td>
+                                </tr>
+                                <tr ID="NOT-CommissionExpiration">
+                                    <td>Commission Expires:</td>
+                                    <td>4/25/2026</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br/>
+                        <br/>
+                        <content styleCode="Bold">Document Authenticity</content>
+                        <br/>
+                        <br/>
+                        <content>Document authenticated and sealed on (date) <content>May 1st,
+                            2020</content>.</content>
+                        <table ID="DocNOT_1">
+                            <tbody>
+                                <tr>
+                                    <td>Information Exchange Document Authenticator:</td>
+                                    <td>ADVault, Inc.</td>
+                                </tr>
+                                <tr>
+                                    <td>Date:</td>
+                                    <td>05/01/2020, at 2:29pm PDT</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br/>
+                    </text>
+                </section>
+            </component>
+            <component>
+                <!-- code="77599-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Additional documentation" -->
+                <section>
+                    <templateId root="2.16.840.1.113883.4.823.1.3.8" extension="2022-08-28"/>
+                    <code code="77599-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                        displayName="Additional documentation"/>
+                    <title mediaType="text/plain" representation="TXT" language="en-US">Additional Documentation</title>
+                    <text ID="ADS">
+                        <br/>
+                        <!-- Added text here for PMOLST -->
+                        <content ID="AD_MOLST">
+                            <content ID="AD_MOLST_Type"> I <content ID="AD_MOSLT_TF">DO
+                                HAVE</content> a Medical Order regarding Life-Sustaining
+                                Treatment (MOLST)</content>
+                            <content ID="AD_MOLST_EffectiveTime"> Effective Time: 05/1/2020
+                                17:22</content>
+                            <content ID="AD_MOST_FileReference">
+                                <linkHtml href="Smith-Johnson_MOLST20200730.pdf"> Access to
+                                    MOLST</linkHtml>
+                            </content>
+                        </content>
+                        <br/>
+                        <br/>
+                    </text>
+                 </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>

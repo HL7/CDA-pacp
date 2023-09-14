@@ -8,15 +8,15 @@ Sponsoring Workgroup: Structured Documents
 Project Insight Number: 1204
 
 ## Overview
-This repository contains implementer guidance and CDA templates defined for the exchange of personal advance care plan information. 
+This repository contains implementer guidance and CDA templates defined for the exchange of personal advance directives and personal advance care plan information. 
 
 The Implementation Guide itself is available via the HL7 Standards Grid [product page] (http://www.hl7.org/implement/standards/product_brief.cfm?product_id=434).
 
-The `backups` directory contains the original word documents and ppt illustrations used to create the final PDFs published for this release and the Word files used to produce the pdfs and the full release for that version, including the validation files and examples.. .
+The `backups` directory contains the original word documents and ppt illustrations used to create the final PDFs published for this release and the Word files used to produce the pdfs and the full release for that version, including the validation files and examples.
 
 The `examples` directory contains current version of the provided example files conformant to this IG in xml or html format. 
 
-The `input` directory contains the pdf files and the _readme.txt file that are considered the current version of the specification.
+The `input` directory contains the pdf files that are considered the current version of the specification.It also includes a change log listing the collection of JIRA tickets addressed by this version of the IG and summarizing the change to the IG associated with each ticket. It also include mapping guidance for mapping between the HL7 ActStatus value set used in ClinicalDocument/sdtc:statusCode and Composition.docStatus.
 
 The `validation` directory contains current version of the validation artifacts. The schematron (.sch) file AND voc.xml file are needed to successfully validate an xml instance asserting conformance to this IG. Implementers should always validate CDA XML 
 files against the core CDA R2 XML schema before validating against the schematron for a specific IG.
