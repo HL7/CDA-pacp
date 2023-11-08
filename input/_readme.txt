@@ -19,13 +19,13 @@ This file:                                         _readme.txt
    
 
                                 -- STU -- 
-File Name 1:                              CDAR2_IG_PERSADVCAREPLAN_E1_STU3_Vol1_2023SEP.pdf
+File Name 1:                  CDAR2_IG_PERSADVCAREPLAN_E1_STU3.1_Vol1_2023OCT.pdf
 
-File Name 2: 				  CDAR2_IG_PERSADVCAREPLAN_E1_STU3_Vol2_2023SEP.pdf
+File Name 2: 				  CDAR2_IG_PERSADVCAREPLAN_E1_STU3.1_Vol2_2023OCT.pdf
 
 
                        --- Change Log --- Stored in Github
-Change Log:                                        https://github.com/HL7/CDA-pacp/tree/main/input  PACP Edition 1 STU3 2023SEP Changelog.xls
+Change Log:                                        https://github.com/HL7/CDA-pacp/tree/main/input  PACP Edition 1 STU3 2023OCT Changelog.xls
          
                        --- Sample files --- Stored in Github
 
